@@ -1,4 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
+// ignore_for_file: public_member_api_docs, sort_constructors_first, unused_field
 // ignore_for_file: camel_case_types, prefer_typing_uninitialized_variables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
@@ -7,9 +7,14 @@ import 'package:mind_self_app/shared/theme.dart';
 
 import '../widgets/container_line.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -167,17 +172,7 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0,
-        items: [
-          BottomNavigationBarItem(
-              icon: new Icon(Icons.dashboard), label: 'ini menu 1'),
-          BottomNavigationBarItem(
-              icon: new Icon(Icons.dashboard), label: 'ini menu 2'),
-          BottomNavigationBarItem(
-              icon: new Icon(Icons.dashboard), label: 'ini menu 3'),
-        ],
-      ),
+      //  bottomNavigationBar: LayoutNavbar(),
     );
   }
 }

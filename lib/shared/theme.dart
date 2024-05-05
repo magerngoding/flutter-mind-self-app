@@ -6,6 +6,8 @@ Color primaryColor = Color(0xffFFC574);
 Color secondaryColor = Color(0xffFFDAA7);
 Color blackColor = Colors.black;
 Color whiteColor = Color(0xffFFFFFF);
+Color gray4FColor = Color(0xff4F4F4F);
+Color gray28Color = Color(0xff282828);
 
 TextStyle primaryTextStyle = GoogleFonts.rubik(
   color: primaryColor,
@@ -18,6 +20,12 @@ TextStyle whitetextStyle = GoogleFonts.rubik(
 );
 TextStyle blacktextStyle = GoogleFonts.rubik(
   color: blackColor,
+);
+TextStyle gray4FtextStyle = GoogleFonts.rubik(
+  color: gray4FColor,
+);
+TextStyle gray28textStyle = GoogleFonts.rubik(
+  color: gray28Color,
 );
 
 FontWeight light = FontWeight.w300;

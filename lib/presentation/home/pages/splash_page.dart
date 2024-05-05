@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:mind_self_app/presentation/home/pages/home_page.dart';
+import 'package:mind_self_app/presentation/home/pages/dashboard_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -19,7 +19,7 @@ class _SplashPageState extends State<SplashPage> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => HomePage(),
+            builder: (context) => DashboardPage(),
           ),
         );
       },
